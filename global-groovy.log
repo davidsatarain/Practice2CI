@@ -1,0 +1,7 @@
+2021-08-10 16:43:51,485 INFO  [log] Board Test board has been created
+2021-08-10 16:43:56,884 INFO  [log] The to Do list has been created sucessfully
+2021-08-10 16:44:02,186 INFO  [log] The to Do has been updated to Done sucessfully
+2021-08-10 16:44:07,476 INFO  [log] The to Do has been created sucessfully
+2021-08-10 16:44:12,944 INFO  [log] The Test Card has been created in the to Do list sucessfully
+2021-08-10 16:44:18,319 INFO  [log] The Test Card card has been moved from to Do list to the Done list successfully
+2021-08-10 16:44:24,042 INFO  [log] The Test board board has been deleted sucessfully

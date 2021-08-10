@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="77830a30-7d09-4152-a699-854126b05bc0" activeEnvironment="Default" name="Practice2" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="BoardValidations"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="CreateAList"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="a64a50cd-e25a-49c5-9055-31d3bb508c68" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api.trello.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://api.trello.com</con:endpoint></con:endpoints><con:resource name="Cards" path="/1/cards/" id="97e32696-e026-4b9f-8693-da7c1ddbdf5c"><con:settings/><con:parameters><con:parameter><con:name>key</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>token</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>name</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>idList</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>desc</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:resource name="CardManage" path="{id}" id="4856ad67-3dcc-4f0d-886b-326126f46975"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="UPDATE A CARD" id="81d2e5df-3c00-4b54-ab16-8515a21d5a45" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:dc5="https://api.trello.com/1/cards/61084dc5b41cb52fbc240143">dc5:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="6b18bb25-5c4c-412b-9796-e2fa81c80164" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters></con:request></con:method><con:method name="DELETE A CARD" id="b4d3185f-a284-432d-8fa8-8abbd2cff821" method="DELETE"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:dc5="https://api.trello.com/1/cards/61084dc5b41cb52fbc240143">dc5:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="6e38b55e-1e7b-4748-9c74-80e38ecfb56e" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters></con:request></con:method></con:resource><con:method name="CREATE CARD" id="3f71976d-3987-4c0a-b9e8-2fc386941d02" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>400 404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:car="https://api.trello.com/1/cards/">car:Response</con:element></con:representation><con:request name="Request 1" id="3c80de97-ba4c-41ee-b26c-b7e1df3e0617" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>idList</con:entry><con:entry/></con:parameterOrder></con:request></con:method></con:resource><con:resource name="Boards" path="/1/boards" id="37d1efd3-8f0d-40c7-9d8f-1a669d2a63e6"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter><con:parameter><con:name>key</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>token</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>name</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>desc</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>defaultLists</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:resource name="{id}" path="{id}/" id="d61006a0-93db-465d-8770-f9766e38242d"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:resource name="lists" path="lists/" id="a864f1bf-b969-4455-9f7a-74489b329718"><con:settings/><con:parameters/><con:method name="CREATE" id="122026a5-3ab4-42e1-b4cf-239ce6ac8047" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:lis="https://api.trello.com/1/boards/6109e062ea8b10593f201ab9/lists/">lis:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="822a9c35-93d6-4f32-84d7-204687a3c0e3" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="defaultLists" value=""/>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:request></con:method><con:method name="GET LISTS" id="e792c97e-14ae-4c02-bcb1-256547501d6b" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="28a35131-755d-49a5-bfc6-822eb5b6e33d" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="defaultLists" value=""/>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="Single card" path="cards/{idCard}" id="30adcb57-6e8e-47e5-bc37-e917652b3d37"><con:settings/><con:parameters><con:parameter><con:name>idCard</con:name><con:value>idCard</con:value><con:style>TEMPLATE</con:style><con:default>idCard</con:default></con:parameter></con:parameters><con:method name="GET A CARD ON A BOARD" id="f65b8850-8c5a-46c6-9dc9-eaf3de16a58d" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:dc5="https://api.trello.com/1/boards/6109e062ea8b10593f201ab9/cards/61084dc5b41cb52fbc240143">dc5:Response</con:element></con:representation><con:request name="Request 1" id="1403afaf-0f47-44e9-9dab-126c95c9a948" mediaType="application/json"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="idCard" value=""/>
+  <con:entry key="defaultLists" value=""/>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>idCard</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="Cards on board" path="cards/" id="6553d3ab-acda-41b0-a1b9-d8365a1b82f2"><con:settings/><con:parameters/><con:method name="GET CARDS" id="869b47ec-9077-4f81-9986-6524bb68491e" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="cf15f0e0-b319-49e4-bb95-e585d63c1ea1" mediaType="application/json"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters></con:request></con:method></con:resource><con:method name="DELETE" id="5d9222a2-fa31-456d-9c34-7b72faafd349" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:e06="https://api.trello.com/1/boards/6109e062ea8b10593f201ab9/">e06:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="343565af-974b-4b9b-a167-1b8e0d3ad973" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="defaultLists" value=""/>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:request></con:method><con:method name="GET A BOARD" id="442210b9-b75b-4eab-8a0d-d38bd3b66282" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="d8150004-036e-4cbb-a311-669f2005e808" mediaType="application/json"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="defaultLists" value=""/>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:method name="CREATE" id="b8577653-f5c5-4194-9498-1c80f1d9c5ce" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:boar="https://api.trello.com/1/boards">boar:Response</con:element></con:representation><con:request name="Request 1" id="610953a1-2712-4060-81b9-ad2625b90c85" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="$[#Project#key]"/>
+  <con:entry key="token" value="$[#Project#token]"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="UpdateList" path="/1/lists/{id}" id="71143b58-6100-4976-a31f-23995ad9f025"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter><con:parameter><con:name>key</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>token</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>name</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="UPDATE" id="3eb36838-1f7f-4ddc-8d94-3a2d8ed3096e" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:f3f="https://api.trello.com/1/lists/61062f3fed89a44d95c06a91">f3f:Response</con:element></con:representation><con:request name="Request 1" id="16af330b-40a7-4d53-9f3c-e9989f648e82" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry></con:parameterOrder></con:request></con:method><con:method name="GET" id="3eb36838-1f7f-4ddc-8d94-3a2d8ed3096e" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:f3f="https://api.trello.com/1/lists/61062f3fed89a44d95c06a91">f3f:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="16af330b-40a7-4d53-9f3c-e9989f648e82" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="1e6bf79c-3a0c-4322-b90f-3ab7589d151c" name="BoardValidations"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="6a8caa53-04f5-4f96-9f26-7a189328909f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateABoard" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CreateABoard" id="ced31730-2641-44b1-b524-45e7386e5f3f"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/boards" methodName="CREATE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateABoard" id="610953a1-2712-4060-81b9-ad2625b90c85" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/boards</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="935c6188-17ce-4dd2-be18-55a894e93d66" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="name" value="Test board"/>
+  <con:entry key="defaultLists" value="false"/>
+  <con:entry key="id" value=""/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+  <con:entry key="desc" value="This a test board"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>name</con:name><con:value>Test</con:value></con:property><con:property><con:name>desc</con:name><con:value>This a test board</con:value></con:property><con:property><con:name>defaultLists</con:name><con:value>false</con:value></con:property></con:properties></con:testCase><con:testCase id="84be51b6-d336-477a-87d8-21001feff4f0" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetLists" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetListsOnBoard" id="7e575b6c-a946-4df1-9e87-7218463f4f10"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/boards/{id}/lists/" methodName="GET LISTS" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetListsOnBoard" id="28a35131-755d-49a5-bfc6-822eb5b6e33d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/boards/610c56a5813f5f5974bed9fe/lists/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="c49c4d3c-fe72-48c2-ada9-dcd10b5b0eb6" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="defaultLists" value=""/>
+  <con:entry key="id" value="6111c3b8c5f62d76d3d10cdb"/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ba9ff7f2-4fc3-4e99-9070-691d1fec1c9c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateAList" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CreateAList" id="405798a3-2f73-4092-b7fb-cbb2274e45c9"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/boards/{id}/lists/" methodName="CREATE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateAList" id="822a9c35-93d6-4f32-84d7-204687a3c0e3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/boards/6109e062ea8b10593f201ab9/lists/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="aec5df7d-c1d1-45a9-b137-7911d6751e37" name="Valid HTTP Status Codes"><con:configuration><codes>200
+</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="name" value="to Do"/>
+  <con:entry key="defaultLists" value=""/>
+  <con:entry key="id" value="6111c3b8c5f62d76d3d10cdb"/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+  <con:entry key="desc" value="This is a test list"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>name</con:name><con:value>toDo</con:value></con:property><con:property><con:name>desc</con:name><con:value>Test list</con:value></con:property><con:property><con:name>id</con:name><con:value>610b1be34a4b926db597a0f9</con:value></con:property></con:properties></con:testCase><con:testCase id="8fc50f78-ee47-4739-a0c8-c1b15e750095" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="UpdateAList" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="UpdateList" id="72c9a255-c0c9-4f3e-ac19-f9fefa531ff6"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/lists/{id}" methodName="UPDATE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateList" id="16af330b-40a7-4d53-9f3c-e9989f648e82" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/lists/61062f3fed89a44d95c06a91</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f468ee26-717f-4246-b17c-676ed1bbddad" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="name" value="Done"/>
+  <con:entry key="id" value="6111c3be3aa08c8ad92a427a"/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>idList</con:name><con:value>${#TestSuite#idList}</con:value></con:property><con:property><con:name>name</con:name><con:value>Done</con:value></con:property></con:properties></con:testCase><con:testCase id="60ab9776-e79e-43e7-8d22-57fcc4bdcc2a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateACard" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CreateACard" id="5ef4616c-3739-482a-867d-e8a0b66fb12d"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/cards/" methodName="CREATE CARD" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateACard" id="3c80de97-ba4c-41ee-b26c-b7e1df3e0617" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/cards/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="85efd280-6096-4b19-92bd-a6de3b2a89e5" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="name" value="Test Card"/>
+  <con:entry key="idList" value="6111c3c828bffc86ea1bb46b"/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+  <con:entry key="desc" value="This is a test card"/>
+</con:parameters><con:parameterOrder><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>idList</con:entry><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>name</con:name><con:value>New Card</con:value></con:property><con:property><con:name>desc</con:name><con:value>this is a new card</con:value></con:property></con:properties></con:testCase><con:testCase id="166c9523-86c0-4f64-afbf-37b18ff24b49" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetCards" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetCardsOnBoard" id="0c55f53f-c449-4b38-9db0-5713293cfe04"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/boards/{id}/cards/" methodName="GET CARDS" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCardsOnBoard" id="cf15f0e0-b319-49e4-bb95-e585d63c1ea1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/boards/610c56a5813f5f5974bed9fe/cards/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value="6111c3b8c5f62d76d3d10cdb"/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4ce9faa3-0218-4c35-a484-08d38295deef" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="MoveACard" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="UpdateTheCard" id="e0636c75-cb83-4740-a135-d4b1c347e12a"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/cards/{id}" methodName="UPDATE A CARD" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateTheCard" id="6b18bb25-5c4c-412b-9796-e2fa81c80164" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/cards/6109e16ce116a6189064b141</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="7932cea1-fe56-45dd-bf6a-9a9b547e3c13" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="name" value="Test Card"/>
+  <con:entry key="id" value="6111c3ce911ede165547869c"/>
+  <con:entry key="idList" value="6111c3be3aa08c8ad92a427a"/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+  <con:entry key="desc" value="This is a test card"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>CardId</con:name><con:value/></con:property><con:property><con:name>name</con:name><con:value>Moved Card</con:value></con:property><con:property><con:name>desc</con:name><con:value>this is the card moved</con:value></con:property></con:properties></con:testCase><con:testCase id="e6240042-d916-488a-af16-e0de5ccc326b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DeleteACard" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="DeleteACard" id="73f5c18b-0270-465a-b851-9a3a11305aff"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/cards/{id}" methodName="DELETE A CARD" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteACard" id="6e38b55e-1e7b-4748-9c74-80e38ecfb56e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/cards/61084dc5b41cb52fbc240143</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="id" value="${#TestSuite#idCard}"/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="4e7ddde4-ab31-4e68-964c-220b7ccd5631" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DeleteABoard" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="DeleteBoard" id="faeceb43-8efb-4466-b8df-5765f8d5d7f1"><con:settings/><con:config service="https://api.trello.com" resourcePath="/1/boards/{id}/" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteBoard" id="343565af-974b-4b9b-a167-1b8e0d3ad973" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.trello.com</con:endpoint><con:request/><con:originalUri>https://api.trello.com/1/boards/6109e062ea8b10593f201ab9/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="8f62654f-2fad-4d8c-91f5-d9e8fccc34b2" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="e42e56b3-2e01-43b3-9559-da61510f5c79" name="JsonPath Match"><con:configuration><path>_value</path><content>null</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="74db0a70-8aec-4707-89d0-fa39d65f24e9" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+def response = messageExchange.response.responseContent;
+def jsr = new JsonSlurper().parseText(response);
+
+assert jsr._value == null
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="defaultLists" value=""/>
+  <con:entry key="id" value="6111c3b8c5f62d76d3d10cdb"/>
+  <con:entry key="key" value="${#Project#key}"/>
+  <con:entry key="token" value="${#Project#token}"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>key</con:entry><con:entry>token</con:entry><con:entry>name</con:entry><con:entry>desc</con:entry><con:entry>defaultLists</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="d4bdae01-0560-43e6-a9ef-50fccf8a3394" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Scripts" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Creating a Board" id="c1ea54b2-049a-4643-8c7f-2d9b82943097"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+def CreateABoard = testRunner.testCase.testSuite.testCases["CreateABoard"].getTestStepByName("CreateABoard")
+
+def name = "Test board"
+def desc = "This a test board"
+def defaultLists = "false"
+
+CreateABoard.setPropertyValue("name",name)
+CreateABoard.setPropertyValue("desc",desc)
+CreateABoard.setPropertyValue("defaultLists",defaultLists)
+CreateABoard.run(testRunner, context)
+
+def boardResponse = testRunner.testCase.testSuite.testCases["CreateABoard"].testSteps["CreateABoard"].getPropertyValue("Response")
+def jbr= new JsonSlurper().parseText(boardResponse)
+
+//Board properties asserts
+assert jbr.name == name 
+assert jbr.desc == desc
+
+log.info "Board "+name+" has been created"
+
+Thread.sleep(5000)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Creating a list" id="4bb9c695-62df-4687-bb31-08e7239a874f"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+def CreateAList = testRunner.testCase.testSuite.testCases["CreateAList"].getTestStepByName("CreateAList")
+def boardResp = testRunner.testCase.testSuite.testCases["CreateABoard"].testSteps["CreateABoard"].getPropertyValue("Response")
+def jbr= new JsonSlurper().parseText(boardResp)
+
+def idBoard = jbr.id
+def listName = "to Do"
+def listDesc = "This is a test list"
+
+CreateAList.setPropertyValue("id",idBoard)
+CreateAList.setPropertyValue("name",listName)
+CreateAList.setPropertyValue("desc",listDesc)
+CreateAList.run(testRunner,context)
+
+def listResponse = testRunner.testCase.testSuite.testCases["CreateAList"].testSteps["CreateAList"].getPropertyValue("Response")
+def jlr= new JsonSlurper().parseText(listResponse)
+
+//List properties asserts
+assert jlr.name == listName
+assert jlr.idBoard == jbr.id
+
+log.info "The "+listName+" list has been created sucessfully"
+
+Thread.sleep(5000)</script></con:config></con:testStep><con:testStep type="groovy" name="Updating the list" id="cc3170c8-b6d4-40c7-9959-72b54d8491ec"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+
+def UpdateAList = testRunner.testCase.testSuite.testCases["UpdateAList"].getTestStepByName("UpdateList")
+def listResponse = testRunner.testCase.testSuite.testCases["CreateAList"].testSteps["CreateAList"].getPropertyValue("Response")
+def jlr= new JsonSlurper().parseText(listResponse)
+
+def listName = jlr.name
+def idList = jlr.id
+def newNameList = "Done"
+def newDescList = "This is a done test list"
+
+UpdateAList.setPropertyValue("id",idList)
+UpdateAList.setPropertyValue("name",newNameList)
+UpdateAList.setPropertyValue("desc",newDescList)
+UpdateAList.run(testRunner,context)
+
+def updatelistResponse = testRunner.testCase.testSuite.testCases["UpdateAList"].testSteps["UpdateList"].getPropertyValue("Response")
+def julr= new JsonSlurper().parseText(updatelistResponse)
+
+//Updated list properties asserts
+assert julr.name == newNameList
+
+log.info "The "+listName+" has been updated to "+newNameList+" sucessfully"
+
+Thread.sleep(5000)
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Creating a list 2" id="57922349-82d3-4c36-8cf0-bec901fec576"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+def CreateAList = testRunner.testCase.testSuite.testCases["CreateAList"].getTestStepByName("CreateAList")
+def boardResp = testRunner.testCase.testSuite.testCases["CreateABoard"].testSteps["CreateABoard"].getPropertyValue("Response")
+def jbr= new JsonSlurper().parseText(boardResp)
+
+def idBoard = jbr.id
+def listName = "to Do"
+def listDesc = "This is a test list"
+
+CreateAList.setPropertyValue("id",idBoard)
+CreateAList.setPropertyValue("name",listName)
+CreateAList.setPropertyValue("desc",listDesc)
+CreateAList.run(testRunner,context)
+
+def listResponse = testRunner.testCase.testSuite.testCases["CreateAList"].testSteps["CreateAList"].getPropertyValue("Response")
+def jlr= new JsonSlurper().parseText(listResponse)
+
+//List properties asserts
+assert jlr.name == listName
+assert jlr.idBoard == jbr.id
+
+log.info "The "+listName+" list has been created sucessfully"
+
+Thread.sleep(5000)</script></con:config></con:testStep><con:testStep type="groovy" name="Creating a Card" id="5083e800-00f5-480e-b9dd-f8d0bde925ce"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+def CreateACard = testRunner.testCase.testSuite.testCases["CreateACard"].getTestStepByName("CreateACard")
+def GetLists = testRunner.testCase.testSuite.testCases["GetLists"].getTestStepByName("GetListsOnBoard")
+
+def boardResp = testRunner.testCase.testSuite.testCases["CreateABoard"].testSteps["CreateABoard"].getPropertyValue("Response")
+def jbr= new JsonSlurper().parseText(boardResp)
+
+GetLists.setPropertyValue("id",jbr.id)
+GetLists.run(testRunner,context)
+def getlistsResp = testRunner.testCase.testSuite.testCases["GetLists"].testSteps["GetListsOnBoard"].getPropertyValue("Response")
+def jglr= new JsonSlurper().parseText(getlistsResp)
+
+def list = "to Do"
+def cardName= "Test Card"
+def cardDesc= "This is a test card"
+def idList = ""
+def listName = ""
+
+for (i=0;i&lt;jglr.size;i++){
+	if (jglr[i].name == list){
+		idList = jglr[i].id
+		listName = jglr[i].name
+	}
+}
+
+CreateACard.setPropertyValue("idList",idList)
+CreateACard.setPropertyValue("name",cardName)
+CreateACard.setPropertyValue("desc",cardDesc)
+CreateACard.run(testRunner,context)
+
+def cardResponse = testRunner.testCase.testSuite.testCases["CreateACard"].testSteps["CreateACard"].getPropertyValue("Response")
+def jcr= new JsonSlurper().parseText(cardResponse)
+
+//Card properties asserts
+assert jcr.name == cardName
+assert jcr.desc == cardDesc
+assert idList == jcr.idList
+
+log.info "The "+cardName+" has been created in the "+listName+" list sucessfully"
+
+Thread.sleep(5000)</script></con:config></con:testStep><con:testStep type="groovy" name="Updating a Card" id="46f20443-364c-4a6c-ad61-8fa82d929b7a"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+def UpdateCard= testRunner.testCase.testSuite.testCases["MoveACard"].getTestStepByName("UpdateTheCard")
+def GetCards = testRunner.testCase.testSuite.testCases["GetCards"].getTestStepByName("GetCardsOnBoard")
+def GetLists = testRunner.testCase.testSuite.testCases["GetLists"].getTestStepByName("GetListsOnBoard")
+
+def boardResp = testRunner.testCase.testSuite.testCases["CreateABoard"].testSteps["CreateABoard"].getPropertyValue("Response")
+def jbr= new JsonSlurper().parseText(boardResp)
+
+GetLists.setPropertyValue("id",jbr.id)
+GetLists.run(testRunner,context)
+def getlistsResp = testRunner.testCase.testSuite.testCases["GetLists"].testSteps["GetListsOnBoard"].getPropertyValue("Response")
+def jglr= new JsonSlurper().parseText(getlistsResp)
+
+GetCards.setPropertyValue("id",jbr.id)
+GetCards.run(testRunner,context)
+def getcardsResp = testRunner.testCase.testSuite.testCases["GetCards"].testSteps["GetCardsOnBoard"].getPropertyValue("Response")
+def jgcr= new JsonSlurper().parseText(getcardsResp)
+
+
+def list = "Done"
+def cardName= "Test Card"
+def cardDesc= "This is a test card"
+def idList = ""
+def oldList = ""
+def listName= ""
+def idCard = ""
+
+
+for (i=0;i&lt;jgcr.size;i++){
+	if (jgcr[i].name == cardName){
+		idCard = jgcr[i].id
+		oldList = jgcr[i].idList
+	}
+}
+
+
+for (i=0;i&lt;jglr.size;i++){
+	if (jglr[i].name == list){
+		idList = jglr[i].id
+	}
+}
+
+UpdateCard.setPropertyValue("id",idCard)
+UpdateCard.setPropertyValue("idList",idList)
+UpdateCard.setPropertyValue("name",cardName)
+UpdateCard.setPropertyValue("desc",cardDesc)
+UpdateCard.run(testRunner,context)
+
+def updatedCardResp = testRunner.testCase.testSuite.testCases["MoveACard"].testSteps["UpdateTheCard"].getPropertyValue("Response")
+def jucr= new JsonSlurper().parseText(updatedCardResp)
+
+
+//Moved Card properties asserts
+assert jucr.id == idCard
+assert jucr.idList == idList
+
+log.info "The "+cardName+" card has been moved to the "+list+" list successfully"
+
+Thread.sleep(5000)</script></con:config></con:testStep><con:testStep type="groovy" name="Deleting a Board" id="38c469e6-d64b-40f6-9bf3-f859efdd18bc"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+def DeleteBoard = testRunner.testCase.testSuite.testCases["DeleteABoard"].getTestStepByName("DeleteBoard")
+
+def boardResp = testRunner.testCase.testSuite.testCases["CreateABoard"].testSteps["CreateABoard"].getPropertyValue("Response")
+def jbr= new JsonSlurper().parseText(boardResp)
+
+DeleteBoard.setPropertyValue("id",jbr.id)
+DeleteBoard.run(testRunner,context)
+
+def deleteBoardResp = testRunner.testCase.testSuite.testCases["DeleteABoard"].testSteps["DeleteBoard"].getPropertyValue("Response")
+def jdbr= new JsonSlurper().parseText(deleteBoardResp)
+
+assert jdbr._value == null
+
+log.info "The "+jbr.name+" board has been deleted sucessfully"</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ba92e818-6b51-4b6f-85cd-3387c260c0ea" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="E2E Scripts" searchProperties="true"><con:settings/><con:testStep type="groovy" name="E2E" id="d3c546b0-a397-436d-97eb-165b0475e239"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.testcase.WsdlTestRunContext 
+
+//Definiendo Test Steps
+def CreateABoard = testRunner.testCase.testSuite.testCases["CreateABoard"].getTestStepByName("CreateABoard")
+def CreateAList = testRunner.testCase.testSuite.testCases["CreateAList"].getTestStepByName("CreateAList")
+def UpdateAList = testRunner.testCase.testSuite.testCases["UpdateAList"].getTestStepByName("UpdateList")
+def CreateACard = testRunner.testCase.testSuite.testCases["CreateACard"].getTestStepByName("CreateACard")
+def UpdateCard= testRunner.testCase.testSuite.testCases["MoveACard"].getTestStepByName("UpdateTheCard")
+def DeleteBoard = testRunner.testCase.testSuite.testCases["DeleteABoard"].getTestStepByName("DeleteBoard")
+
+//Creating a Board
+
+def name = "Test board"
+def desc = "This a test board"
+def defaultLists = "false"
+
+CreateABoard.setPropertyValue("name",name)
+CreateABoard.setPropertyValue("desc",desc)
+CreateABoard.setPropertyValue("defaultLists",defaultLists)
+CreateABoard.run(testRunner, context)
+
+def boardResponse = testRunner.testCase.testSuite.testCases["CreateABoard"].testSteps["CreateABoard"].getPropertyValue("Response")
+def jbr= new JsonSlurper().parseText(boardResponse)
+
+//Board properties asserts
+assert jbr.name == name 
+assert jbr.desc == desc
+
+log.info "Board "+name+" has been created"
+
+Thread.sleep(5000)
+
+//Creating a List on the Board
+
+def idBoard = jbr.id
+def listName = "to Do"
+def listDesc = "This is a test list"
+
+CreateAList.setPropertyValue("id",idBoard)
+CreateAList.setPropertyValue("name",listName)
+CreateAList.setPropertyValue("desc",listDesc)
+CreateAList.run(testRunner,context)
+
+def listResponse = testRunner.testCase.testSuite.testCases["CreateAList"].testSteps["CreateAList"].getPropertyValue("Response")
+def jlr= new JsonSlurper().parseText(listResponse)
+
+//List properties asserts
+assert jlr.name == listName
+
+log.info "The "+listName+" list has been created sucessfully"
+
+Thread.sleep(5000)
+
+//Updating the list
+
+def idList = jlr.id
+def newNameList = "Done"
+
+UpdateAList.setPropertyValue("id",idList)
+UpdateAList.setPropertyValue("name",newNameList)
+UpdateAList.run(testRunner,context)
+
+def updatelistResponse = testRunner.testCase.testSuite.testCases["UpdateAList"].testSteps["UpdateList"].getPropertyValue("Response")
+def julr= new JsonSlurper().parseText(updatelistResponse)
+
+//Updated list properties asserts
+assert julr.name == newNameList
+
+log.info "The "+listName+" has been updated to "+newNameList+" sucessfully"
+
+Thread.sleep(5000)
+
+//Creating a new list with the original properties
+
+CreateAList.run(testRunner,context)
+
+def listResponse2 = testRunner.testCase.testSuite.testCases["CreateAList"].testSteps["CreateAList"].getPropertyValue("Response")
+def jlr2= new JsonSlurper().parseText(listResponse2)
+
+log.info "The "+listName+" has been created sucessfully"
+
+Thread.sleep(5000)
+
+//Creating a card in the new list
+
+def cardName= "Test Card"
+def cardDesc= "This is a test card"
+
+CreateACard.setPropertyValue("idList",jlr2.id)
+CreateACard.setPropertyValue("name",cardName)
+CreateACard.setPropertyValue("desc",cardDesc)
+CreateACard.run(testRunner,context)
+
+def cardResponse = testRunner.testCase.testSuite.testCases["CreateACard"].testSteps["CreateACard"].getPropertyValue("Response")
+def jcr= new JsonSlurper().parseText(cardResponse)
+
+//Card properties asserts
+assert jcr.name == cardName
+assert jcr.desc == cardDesc
+
+log.info "The "+cardName+" has been created in the "+listName+" list sucessfully"
+
+Thread.sleep(5000)
+
+
+//Moving the card to the first (updated) list
+
+UpdateCard.setPropertyValue("id",jcr.id)
+UpdateCard.setPropertyValue("idList",julr.id)
+UpdateCard.setPropertyValue("name",cardName)
+UpdateCard.setPropertyValue("desc",cardDesc)
+UpdateCard.run(testRunner,context)
+
+def updatedCardResp = testRunner.testCase.testSuite.testCases["MoveACard"].testSteps["UpdateTheCard"].getPropertyValue("Response")
+def jucr= new JsonSlurper().parseText(updatedCardResp)
+
+
+//Moved Card properties asserts
+assert jucr.id == jcr.id
+assert jucr.idList == julr.id
+
+log.info "The "+cardName+" card has been moved from "+listName+" list to the "+newNameList+" list successfully"
+
+Thread.sleep(5000)
+
+//Deleting the board
+
+DeleteBoard.setPropertyValue("id",jbr.id)
+DeleteBoard.run(testRunner,context)
+
+def deleteBoardResp = testRunner.testCase.testSuite.testCases["DeleteABoard"].testSteps["DeleteBoard"].getPropertyValue("Response")
+def jdbr= new JsonSlurper().parseText(deleteBoardResp)
+
+assert jdbr._value == null
+
+log.info "The "+name+" board has been deleted sucessfully"
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>id</con:name><con:value>610b1ba0673f112cba6d4130</con:value></con:property><con:property><con:name>idCard</con:name><con:value>610b0a3917b8845d7ae34000</con:value></con:property><con:property><con:name>idList</con:name><con:value>610b0b8f82bf7f4c66250f31</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>key</con:name><con:value>3af50a8803471182f23deae8d5a7ced2</con:value></con:property><con:property><con:name>token</con:name><con:value>85526745459b819ab35d31c2448419cf290e5fc1419f9dd403d1c6f16cca0c45</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

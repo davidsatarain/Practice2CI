@@ -1,0 +1,98 @@
+2021-08-10 16:43:35,003 WARN  [SoapUI] Missing folder [C:\Users\102331781\eclipse-workspace\Practice2\ext] for external libraries
+2021-08-10 16:43:35,278 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\102331781\soapui-settings.xml]
+2021-08-10 16:43:38,317 INFO  [Reflections] Reflections took 325 ms to scan 2 urls, producing 75 keys and 160 values 
+2021-08-10 16:43:38,598 INFO  [Reflections] Reflections took 100 ms to scan 1 urls, producing 46 keys and 344 values 
+2021-08-10 16:43:39,347 INFO  [Reflections] Reflections took 14 ms to scan 1 urls, producing 11 keys and 17 values 
+2021-08-10 16:43:39,918 INFO  [Reflections] Reflections took 16 ms to scan 1 urls, producing 13 keys and 21 values 
+2021-08-10 16:43:42,382 INFO  [Reflections] Reflections took 2260 ms to scan 13 urls, producing 341 keys and 1458 values 
+2021-08-10 16:43:42,420 INFO  [PluginManager] Adding plugin from [C:\Users\102331781\.soapuios\plugins\ready-mqtt-plugin-dist.jar]
+2021-08-10 16:43:42,420 INFO  [PluginManager] Adding plugin from [C:\Users\102331781\.soapuios\plugins\soapui-swagger-plugin-2.2-dist.jar]
+2021-08-10 16:43:42,708 INFO  [Reflections] Reflections took 215 ms to scan 2 urls, producing 75 keys and 160 values 
+2021-08-10 16:43:43,836 INFO  [Reflections] Reflections took 1115 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-08-10 16:43:43,883 INFO  [PluginManager] Adding plugin from [C:\Users\102331781\.soapuios\plugins\ready-uxm-plugin-os-1.0.3.jar]
+2021-08-10 16:43:43,945 INFO  [Reflections] Reflections took 29 ms to scan 1 urls, producing 46 keys and 344 values 
+2021-08-10 16:43:44,608 INFO  [Reflections] Reflections took 1908 ms to scan 13 urls, producing 341 keys and 1458 values 
+2021-08-10 16:43:44,970 INFO  [Reflections] Reflections took 1016 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-08-10 16:43:45,004 INFO  [PluginManager] Adding plugin from [C:\Users\102331781\.soapuios\plugins\readyapi-swaggerhub-plugin-1.0.jar]
+2021-08-10 16:43:45,259 INFO  [Reflections] Reflections took 7 ms to scan 1 urls, producing 13 keys and 21 values 
+2021-08-10 16:43:45,773 INFO  [Reflections] Reflections took 1141 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-08-10 16:43:45,788 INFO  [PluginManager] Adding plugin from [C:\Users\102331781\.soapuios\plugins\readyapi-postman-1.0.1.jar]
+2021-08-10 16:43:46,087 INFO  [Reflections] Reflections took 13 ms to scan 1 urls, producing 11 keys and 17 values 
+2021-08-10 16:43:46,294 INFO  [Reflections] Reflections took 1029 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-08-10 16:43:47,088 INFO  [Reflections] Reflections took 992 ms to scan 1 urls, producing 1492 keys and 5707 values 
+2021-08-10 16:43:47,102 INFO  [PluginManager] 5 plugins loaded in 4681 ms
+2021-08-10 16:43:47,102 INFO  [DefaultSoapUICore] All plugins loaded
+2021-08-10 16:43:48,842 INFO  [WsdlProject] Loaded project from [file:/C:/Users/102331781/eclipse-workspace/Practice2/resources/Practice2-soapui-project.xml]
+2021-08-10 16:43:50,148 ERROR [SoapUI] An error occurred [class org.apache.commons.beanutils.PropertyUtilsBean cannot access class sun.security.ssl.SSLSocketImpl (in module java.base) because module java.base does not export sun.security.ssl to unnamed module @6ee52dcd], see error log for details
+2021-08-10 16:43:50,150 ERROR [errorlog] java.lang.IllegalAccessException: class org.apache.commons.beanutils.PropertyUtilsBean cannot access class sun.security.ssl.SSLSocketImpl (in module java.base) because module java.base does not export sun.security.ssl to unnamed module @6ee52dcd
+java.lang.IllegalAccessException: class org.apache.commons.beanutils.PropertyUtilsBean cannot access class sun.security.ssl.SSLSocketImpl (in module java.base) because module java.base does not export sun.security.ssl to unnamed module @6ee52dcd
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:385)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:687)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:559)
+	at org.apache.commons.beanutils.PropertyUtilsBean.invokeMethod(PropertyUtilsBean.java:1773)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setSimpleProperty(PropertyUtilsBean.java:1759)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setNestedProperty(PropertyUtilsBean.java:1648)
+	at org.apache.commons.beanutils.PropertyUtilsBean.setProperty(PropertyUtilsBean.java:1677)
+	at org.apache.commons.beanutils.PropertyUtils.setProperty(PropertyUtils.java:559)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:257)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:233)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:323)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:301)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:231)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:119)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:79)
+	at com.eviware.soapui.impl.rest.RestRequest.submit(RestRequest.java:192)
+	at com.eviware.soapui.impl.wsdl.teststeps.RestTestRequestStep.run(RestTestRequestStep.java:794)
+	at com.eviware.soapui.model.testsuite.TestStep$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:136)
+	at Script1.run(Script1.groovy:22)
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:90)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:141)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:128)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.start(AbstractTestRunner.java:76)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase.run(WsdlTestCase.java:594)
+	at Rest.restRunner.singleTest(restRunner.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+2021-08-10 16:43:51,485 INFO  [log] Board Test board has been created
+2021-08-10 16:43:56,884 INFO  [log] The to Do list has been created sucessfully
+2021-08-10 16:44:02,186 INFO  [log] The to Do has been updated to Done sucessfully
+2021-08-10 16:44:07,476 INFO  [log] The to Do has been created sucessfully
+2021-08-10 16:44:12,944 INFO  [log] The Test Card has been created in the to Do list sucessfully
+2021-08-10 16:44:18,319 INFO  [log] The Test Card card has been moved from to Do list to the Done list successfully
+2021-08-10 16:44:24,042 INFO  [log] The Test board board has been deleted sucessfully
+2021-08-10 16:44:24,084 WARN  [Tools] Could not delete temporary directory C:\Users\102331~1\AppData\Local\Temp\4ffc408e-b167-495f-abf7-2bb4758ac117
+2021-08-10 16:44:24,095 WARN  [Tools] Could not delete temporary directory C:\Users\102331~1\AppData\Local\Temp\502f84ec-b7ac-4836-84a1-500244133094
