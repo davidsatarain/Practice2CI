@@ -4,9 +4,7 @@ on:
 
   push:
     branches: [ backend ]
-  pull_request:
-    branches: [ backend ]
-    
+  
 jobs:
 
   build:
@@ -14,6 +12,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    
       - name: Checkout master branch from Github
         uses: actions/checkout@v2
         
