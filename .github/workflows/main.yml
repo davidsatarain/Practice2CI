@@ -26,5 +26,5 @@ jobs:
           java-version: '11'
           
       - name: Run the code in the cmd 
-        run: javac -classpath lib/* -d ./bin ./src/Rest/*.java
+        run: javac -classpath src/Rest/*.java
          
