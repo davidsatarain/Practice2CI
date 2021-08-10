@@ -25,6 +25,9 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
           
-      - name: Run the code in the cmd 
-        run: javac -classpath src/Rest/restRunner.java
+      - name: Set up the packages
+        run: javac -classpath lib/* -d ./bin ./src/Rest/*.java
+        
+      - name: Running the code
+        run: java -cp bin;lib/* org.testng.TestNG testng.xml
          
