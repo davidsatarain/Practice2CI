@@ -1,4 +1,4 @@
-name: Backend Testing CI
+name: Backend Testing
 
 on:
 
@@ -6,8 +6,7 @@ on:
     branches: [ backend ]
   
 jobs:
-
-  build:
+ build:
 
     runs-on: windows-latest
 
