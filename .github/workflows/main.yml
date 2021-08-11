@@ -28,6 +28,6 @@ jobs:
       - name: Set up the packages
         run: 
             javac -classpath lib/* -d ./bin ./src/Rest/restRunner.java
-            java org.testng.TestNG testng.xml
+            java -cp bin;lib/* org.testng.TestNG testng.xml
         
          
