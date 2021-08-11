@@ -26,8 +26,10 @@ jobs:
           java-version: '11'
           
       - name: Set up the packages
-        run: 
-            javac -classpath lib/* -d ./bin ./src/Rest/restRunner.java
-            java -cp bin;lib/* org.testng.TestNG testng.xml
+        run: javac -classpath lib/* -d ./bin ./src/Rest/restRunner.java
+
+      - name: Running the test
+        run: java -cp bin;lib/* org.testng.TestNG testng.xml
+            
         
          
