@@ -29,5 +29,5 @@ jobs:
         run: javac -classpath lib/* -d ./bin ./src/Rest/restRunner.java
         
       - name: Running the code
-        run: java -cp bin; org.testng.TestNG testng.xml
+        run: java org.testng.TestNG testng.xml
          
